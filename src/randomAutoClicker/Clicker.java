@@ -9,8 +9,11 @@ import javax.swing.Timer;
 
 public class Clicker
 {
-    private int rate = 500;     // Arbitrary default values.
-    private int variance = 100;
+    public static final int DEFAULT_RATE = 800;     // Arbitrary default values.
+    public static final int DEFAULT_VAR = 200;
+
+    private int rate = DEFAULT_RATE;
+    private int variance = DEFAULT_VAR;
     private int actual;
     private boolean running = false;
     private Robot bot;
